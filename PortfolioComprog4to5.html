@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <title>Your Website</title>
+    <style>
+        body {
+        margin: 0;
+        padding: 0;
+        }
+        #section1 {
+        background-image: url("backgroundproject.png");
+        height: 100vh;
+        color: rgb(191, 95, 95);
+        font-size: 45px;
+        text-align: center;
+        padding: 1em;
+        }
+        #section2 img {
+        height: 300px;
+        float: center;
+        margin-right: 50px;
+        padding-left: 50px;
+        }
+        #section3 img {
+        height: 150px;
+        float: center;
+        padding-left: 50px;
+        }
+        #section4 img {
+        margin-top: 50zpx;
+        height: 300px;
+        float: center;
+        padding-left: 50px;
+        }
+        #section2 {
+        background-color: rgb(221, 209, 209);
+        height: 100vh;
+        color: rgb(212, 99, 99);
+        font-size: 45px;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        padding: 1em;
+        }
+        #section3 {
+        background-image: url("backgroundproject.png");
+        height: 100vh;
+        color: rgb(237, 104, 104);
+        font-size: 45px;
+        text-align: center;
+        padding: 1em;
+        }
+        #section4 {
+        background-color: rgb(221, 209, 209);
+        height: 100vh;
+        color: rgb(243, 111, 111);
+        font-size: 45px;
+        text-align: center;
+        padding: 1em;
+        }
+        #section5 {
+        background-image: url("backgroundproject.png");
+        height: 100vh;
+        color: rgb(225, 121, 121);
+        font-size: 45px;
+        text-align: center;
+        padding: 1em;
+        }
+        button {
+        font-size: 40px;
+        cursor: pointer;
+        color:rgb(210, 97, 116); 
+        font-family:'Times New Roman', Times, serif;  
+        background: none;
+        border: none;
+        float: center;
+        }
+        p{
+            font-size: 30px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        a{
+            color: rgb(212, 99, 180);
+        }
+        </style>
+</head>
+<body>
+    <section id="section1">
+        <img src="bbythea.jpeg" height="600px" style="float: left; padding-left: 30px;">  
+        <h1>Althea Nicole M. Napo</h1>
+        <h1>MAWD 12</h1>
+        <br> 
+        <button onclick="scrollToSection('section2')"; style=float:center; >About Me!</button>
+        <br>
+        <button onclick="scrollToSection('section3')";style=float:center;  >My Projects</button>
+        <br>
+        <button onclick="scrollToSection('section4')";style=float:center; >Blog</button>
+        <br>
+        <button onclick="scrollToSection('section5')";style=float:center;>Contact</button>
+    </section>  
+    <section id="section2">
+        <h2>About Me!</h2>
+        <button onclick="scrollToSection('section1')">Home</button>
+        <button onclick="scrollToSection('section2')">About Me!</button>
+        <button onclick="scrollToSection('section3')">My Projects</button>
+        <button onclick="scrollToSection('section4')">Blog</button>
+        <button onclick="scrollToSection('section5')">Contact</button>
+        <p>Hi! my full name is Althea Nicole M. Napo. I'am 17 years old and turing 18 this June 19. I also like watching movies and trying this i want to. I'am also a clingy and jolly and loves being cared.</p>
+        <img src="babyme.jpeg">
+        <img src="cutie.jpeg" >
+
+        
+    </section>
+    <section id="section3">
+        <h2>My Project</h2>
+        <button onclick="scrollToSection('section1')">Home</button>
+        <button onclick="scrollToSection('section2')">About Me!</button>
+        <button onclick="scrollToSection('section3')">My Projects</button>
+        <button onclick="scrollToSection('section4')">Blog</button>
+        <button onclick="scrollToSection('section5')">Contact</button>
+        <br>
+        <p>Comprog 4</p>
+        <img src="project-1-comprog-4.jpeg">
+        <img src="project-3-comprog-4.jpeg">
+        <p>Comprog 5</p>
+        <img src="project-2-comprog-5.jpeg">
+        <img src="project-4-comprog-5.jpeg">
+    </section>
+    <section id="section4">
+        <h2>Blog</h2>
+        <button onclick="scrollToSection('section1')">Home</button>
+        <button onclick="scrollToSection('section2')">About Me!</button>
+        <button onclick="scrollToSection('section3')">My Projects</button>
+        <button onclick="scrollToSection('section4')">Blog</button>
+        <button onclick="scrollToSection('section5')">Contact</button>
+        <br>
+        <p>My Future Carrer</p>
+        <img src="programming.gif">
+        <img src="erorr.gif">
+        <img src="programming2.gif">
+  
+    </section>
+    <section id="section5">
+        <h2>Contact</h2>
+        <button onclick="scrollToSection('section1')">Home</button>
+        <button onclick="scrollToSection('section2')">About Me!</button>
+        <button onclick="scrollToSection('section3')">My Projects</button>
+        <button onclick="scrollToSection('section4')">Blog</button>
+        <button onclick="scrollToSection('section5')">Contact</button>
+        <br><br>
+        <p>Cellphone Number : 09267998568</p>
+        <p>Email: anicolenapo19@gmail.com</p>
+        <p>Address:Urban 2 San Francisco Magalang Pamp. </p>
+        <a href="https://www.facebook.com/anicole.napo" id="link">My Facebook</a><br>
+        <a href="https://www.instagram.com/anicolenapo/" id="link">My Instagram</a><br>
+        <a href="https://www.tiktok.com/@thea_1906" id="link">My Tiktok</a>
+    </section>
+    <script>
+        function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    section.scrollIntoView({ behavior: 'smooth' });
+}
+    </script>
+</body>
+</html>
